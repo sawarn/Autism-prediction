@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Autism Prediction</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="main">
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="ques">
+            <label for="cars" class="label">Gender:</label>
+                <select name="cars" id="gender">
+                    <option value="volvo">Choose an option</option>
+                    <option value="saab">Male</option>
+                    <option value="opel">Female</option>
+                </select>
+                <br>
+                <br>
+                
+            <label for="cars" class="label">Ethnicity</label>
+                <select name="cars" id="eth">
+                    <option value="volvo">Choose an option</option>
+                    <option value="saab">Middle Eastern</option>
+                    <option value="opel">White-EUropean</option>
+                    <option value="audi">Black</option>
+                    <option value="audi">South-Asian</option>
+                    <option value="audi">Asian</option>
+                    <option value="audi">Pasifika</option>
+                    <option value="audi">Hispanic</option>
+                    <option value="audi">Turkish</option>
+                    <option value="audi">Latino</option>
+                    <option value="audi">Others</option>
+
+                </select>
+                <br>
+                <br>
+            <label for="cars" class="label">Do you have jaundice?</label>
+                <select name="cars" id="jaun">
+                    <option>Choose an option</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select> 
+                <br>
+                <br>
+            
+                <label for="cars" class="label">Country of residence</label>
+                <select id="country">
+                    <option>Choose an option</option>
+                </select>
+                <br>
+                <br>
+                <label for="cars" class="label">He/She often notices small sounds when others do not or notices patterns all the time?</label>
+                <select name="cars" id="q1">
+                    <option value="saab">Choose an option</option>
+                    <option value="opel">Yes</option>
+                    <option value="audi">No</option>
+                </select> 
+                <br>
+                <br>
+                <label for="cars" class="label">He/She usually concentrates more on the whole picture, rather than the small detail</label>
+                <select name="cars" id="q2">
+                    <option value="saab">Choose an option</option>
+                    <option value="opel">Yes</option>
+                    <option value="audi">No</option>
+                </select> 
+                <br>
+                <br>
+                <label for="cars" class="label">In a social group, he/she can easily keep track of several different peoples conversations</label>
+                <select name="cars" id="q3">
+                    <option value="saab">Choose an option</option>
+                    <option value="opel">Yes</option>
+                    <option value="audi">No</option>
+                </select> 
+                <br>
+                <br>
+                <label for="cars" class="label">If there is an interruption, he/she can switchback to what he/she was doing very quick</label>
+                <select name="cars" id="q4">
+                    <option value="saab">Choose an option</option>
+                    <option value="opel">Yes</option>
+                    <option value="audi">No</option>
+                </select> 
+                <br>
+                <br>
+                <label for="cars" class="label">He/She doesnt know how to keep a conversation going with his/her peers</label>
+                <select name="cars" id="q5">
+                    <option value="saab">Choose an option</option>
+                    <option value="opel">Yes</option>
+                    <option value="audi">No</option>
+                </select> 
+                <br>
+                <br>
+                <label for="cars" class="label">He/She knows how to tell if someone listening to him/her is getting bored</label>
+                <select name="cars" id="q6">
+                    <option value="saab">Choose an option</option>
+                    <option value="opel">Yes</option>
+                    <option value="audi">No</option>
+                </select> 
+                <br>
+                <label for="cars" class="label">When he/she was younger,he/she used to enjoy playing games involving pretending with other children</label>
+                <select name="cars" id="q7">
+                    <option value="saab">Choose an option</option>
+                    <option value="opel">Yes</option>
+                    <option value="audi">No</option>
+                </select> 
+                <br>
+                <br>
+                <label for="cars" class="label">Does he/she like to collect information about categories of things(e.g. types of car, types of bird, types of train, types of plant etc)</label>
+                <select name="cars" id="q8">
+                    <option value="saab">Choose an option</option>
+                    <option value="opel">Yes</option>
+                    <option value="audi">No</option>
+                </select> 
+                <br>
+                <br>
+                <label for="cars" class="label">Does he/she find it easy to work out what someone is thinking or feeling just by looking at their face</label>
+                <select name="cars" id="q9">
+                    <option value="saab">Choose an option</option>
+                    <option value="opel">Yes</option>
+                    <option value="audi">No</option>
+                </select> 
+                <br>
+                <br>
+                <label for="cars" class="label">Does he/she find it difficult to work out peoples intentions</label>
+                <select name="cars" id="q10">
+                    <option value="saab">Choose an option</option>
+                    <option value="opel">Yes</option>
+                    <option value="audi">No</option>
+                </select> 
+<br>
+<br>
+                <button class="btn">Submit</button>
+
+            </div>
+        </header>
+
+        
+            
+        
+    </body>
+
+    <script>
+        var select = document.getElementById("country"); 
+        var options = ["Jordan","United States","Egypt","United Kingdom","Bahrain","Austria",
+                     "Kuwait","United Arab Emirates","Europe","Malta","Bulgaria",
+                     "South Africa","India","Afghanistan","Georgia","New Zealand","Syria",
+                     "Iraq","Australia","Saudi Arabia","Armenia","Turkey","Pakistan","Canada",
+                     "Oman","Brazil","South Korea","Costa Rica","Sweden","Philippines",
+                     "Malaysia","Argentina","Japan","Bangladesh","Qatar","Ireland","Romania",
+                     "Netherlands","Lebanon","Germany","Latvia","Russia","Italy","China",
+                     "Nigeria","U.S. Outlying Islands","Nepal","Mexico","Isle of Man","Libya",
+                     "Ghana","Bhutan","Spain","Bahamas","Burundi","Chile","France","Tonga",
+                      "Sri Lanka","Sierra Leone","Ethiopia","Viet Nam","Iran","Iceland","Nicaragua",
+                      "Hong Kong","Ukraine","Kazakhstan","AmericanSamoa","Uruguay","Serbia","Portugal",
+                      "Ecuador","Niger","Belgium","Bolivia","Aruba","Finland","Indonesia","Angola",
+                      "Azerbaijan","Czech Republic","Cyprus"]; 
+
+for(var i = 0; i < options.length; i++) {
+    var opt = options[i];
+    var el = document.createElement("option");
+    el.text = opt;
+    el.value = opt;
+    select.add(el);
+}​
+    </script>
+    
+</html>
