@@ -5,11 +5,23 @@
     font-size: large;
 }
 
-header{
+:root{
+    height: 150%;
     background-image: url('1.jpg');
-    height:130vh;
+    
+    background-size: contain;
+    background-repeat: repeat-y;
+}
+
+header{
+    
+    height:19vh;
     background-size: cover;
     background-position: center;   
+}
+
+.main{
+    height: 15%;
 }
 
 ul{
@@ -51,4 +63,31 @@ ul li.active a{
 }
 .label{
     cursor: pointer;
+    display: flex;
+}
+#title{
+    color: white;
+    font-weight: 600;
+    margin-left: 15pt;
+    
+}
+
+h1{
+    font-weight: 900;
+    line-height: 1.2;
+}
+p{
+    font-size: 1.125rem;
+}
+h1,p{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+#description{
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+    color: #fff;
+
 }

@@ -22,10 +22,10 @@ from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from sklearn.metrics import confusion_matrix
 
-img_width, img_height = 200, 200
+img_width, img_height = 300, 300
 
-train_data="/home/sivjos/Desktop/Autism-Prediction/Train/"
-test_data="/home/sivjos/Desktop/Autism-Prediction/Test/"
+train_data="/home/sivjos/Desktop/Autism-Prediction/Train"
+test_data="/home/sivjos/Desktop/Autism-Prediction/Test"
 
 train_path = list(paths.list_images(train_data)) 
 #print(train_path)
@@ -36,7 +36,7 @@ trainLabels = [p.split(os.path.sep)[6] for p in train_path]
 #trainLabels= [a.split(os.path.sep) for a in trainLabels]
 trainLabels= (map(str,trainLabels))
 trainLabels= list(map(str,[b.split("_",1)[0:1] for b in trainLabels]))
-print(trainLabels)
+#print(trainLabels)
 
 #trainLabels= list(map(int,trainLabels))
 
@@ -45,7 +45,7 @@ epochs = 30
 batch_size = 10
 
 if K.image_data_format() == 'channels_first':
-    input_shape = (6, img_width, img_height)
+    input_shape = (3, img_width, img_height)
 else:
     input_shape = (img_width, img_height, 3)
     

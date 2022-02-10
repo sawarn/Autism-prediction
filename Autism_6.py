@@ -32,7 +32,3 @@ show_slices([img1_data[128, :, :],
              img1_data[:, 66, :],
              img1_data[:, :, 128]])
 
-show_slices([img2_data[32, :, :,:],
-             img2_data[:, 32, :,:],
-             img2_data[:, :, 14,:],
-             img2_data[:, :,:,90]])
